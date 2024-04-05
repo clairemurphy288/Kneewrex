@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1059709389364",
+    "project_id": "kneewrex",
+    "storage_bucket": "kneewrex.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059709389364:android:6e4f7fdff90501eaba5861",
+        "android_client_info": {
+          "package_name": "com.core.kneewrex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1059709389364-62bgmvlo2l4oftfn50600r9cv75mm237.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdfg6hFFWi1pdQAWaf13Lu2AyjKP2G9SI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1059709389364-62bgmvlo2l4oftfn50600r9cv75mm237.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

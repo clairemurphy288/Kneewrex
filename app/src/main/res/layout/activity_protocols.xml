@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProtocolsActivity">
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:text="@string/connecting"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"
+        app:layout_constraintEnd_toEndOf="@+id/btnNext"
+        app:layout_constraintStart_toStartOf="@+id/btnNext"
+        app:layout_constraintTop_toTopOf="@+id/imgPreset" />
+
+    <Button
+        android:id="@+id/btnPreset1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:background="@drawable/bg_button"
+        android:button="@null"
+        android:text="@string/preset_1"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPreset5"
+        app:layout_constraintEnd_toStartOf="@+id/btnPreset2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/btnPreset2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/bg_button"
+        android:text="@string/preset_2"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPreset1"
+        app:layout_constraintEnd_toStartOf="@+id/btnPreset3"
+        app:layout_constraintStart_toEndOf="@+id/btnPreset1"
+        app:layout_constraintTop_toTopOf="@+id/btnPreset1" />
+
+    <Button
+        android:id="@+id/btnPreset3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/bg_button"
+        android:text="@string/preset_3"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPreset2"
+        app:layout_constraintEnd_toStartOf="@+id/btnPreset4"
+        app:layout_constraintStart_toEndOf="@+id/btnPreset2"
+        app:layout_constraintTop_toTopOf="@+id/btnPreset2" />
+
+    <Button
+        android:id="@+id/btnPreset4"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@drawable/bg_button"
+        android:text="@string/preset_4"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPreset3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnPreset3"
+        app:layout_constraintTop_toTopOf="@+id/btnPreset3" />
+
+    <Button
+        android:id="@+id/btnPreset5"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@drawable/bg_button"
+        android:text="@string/preset_5"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toTopOf="@+id/imgPreset"
+        app:layout_constraintEnd_toStartOf="@+id/btnPreset6"
+        app:layout_constraintStart_toStartOf="@+id/btnPreset1"
+        app:layout_constraintTop_toBottomOf="@+id/btnPreset1" />
+
+    <Button
+        android:id="@+id/btnPreset6"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/bg_button"
+        android:text="@string/preset_6"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPreset5"
+        app:layout_constraintEnd_toStartOf="@+id/btnPreset7"
+        app:layout_constraintStart_toEndOf="@+id/btnPreset5"
+        app:layout_constraintTop_toTopOf="@+id/btnPreset5" />
+
+    <Button
+        android:id="@+id/btnPreset7"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/bg_button"
+        android:text="@string/preset_7"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPreset6"
+        app:layout_constraintEnd_toStartOf="@+id/btnPreset8"
+        app:layout_constraintStart_toEndOf="@+id/btnPreset6"
+        app:layout_constraintTop_toTopOf="@+id/btnPreset6" />
+
+    <Button
+        android:id="@+id/btnPreset8"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:background="@drawable/bg_button"
+        android:text="@string/preset_8"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPreset7"
+        app:layout_constraintEnd_toEndOf="@+id/btnPreset4"
+        app:layout_constraintStart_toEndOf="@+id/btnPreset7"
+        app:layout_constraintTop_toTopOf="@+id/btnPreset7" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgPreset"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_16sdp"
+        android:src="@drawable/preset_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnNext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPreset5"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:background="@drawable/bg_button"
+        android:text="@string/next"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toTopOf="@+id/btnReset"
+        app:layout_constraintEnd_toEndOf="@+id/btnPreset8"
+        app:layout_constraintStart_toEndOf="@+id/imgPreset"
+        app:layout_constraintTop_toBottomOf="@+id/tvStatus"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/bg_button"
+        android:text="@string/reset"
+        android:textSize="@dimen/_14sdp"
+        app:backgroundTint="@color/red"
+        app:layout_constraintBottom_toBottomOf="@+id/imgPreset"
+        app:layout_constraintEnd_toEndOf="@+id/btnNext"
+        app:layout_constraintStart_toStartOf="@+id/btnNext"
+        app:layout_constraintTop_toBottomOf="@+id/btnNext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

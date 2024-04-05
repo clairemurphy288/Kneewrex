@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ParametersActivity">
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_12sdp"
+        android:text="@string/connecting"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:text="@string/select_treatment_time"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStatus" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btnTimeDecrease"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_weight="0"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/double_arrow_left"
+            app:tint="@color/blue" />
+
+        <SeekBar
+            android:id="@+id/seekBarTime"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:max="6"
+            android:maxHeight="@dimen/_12sdp"
+            android:minHeight="@dimen/_12sdp"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:progressDrawable="@drawable/seekbar_bg"
+            android:splitTrack="false"
+            android:thumb="@drawable/seekbar_thumb" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtTime"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="@drawable/bg_edit"
+            android:enabled="false"
+            android:inputType="none"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:text="@string/_0"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btnTimeIncrease"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_weight="0"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/double_arrow_right"
+            app:tint="@color/blue" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_24sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="@string/minutes"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="@string/select_treatment_force"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btnForceDecrease"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_weight="0"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/double_arrow_left"
+            app:tint="@color/blue" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtForce"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_edit"
+            android:enabled="false"
+            android:inputType="none"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:text="@string/_0"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/seekBarForce"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:max="27"
+            android:maxHeight="@dimen/_12sdp"
+            android:minHeight="@dimen/_12sdp"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:progressDrawable="@drawable/seekbar_bg"
+            android:splitTrack="false"
+            android:thumb="@drawable/seekbar_thumb" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btnForceIncrease"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_weight="0"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/double_arrow_right"
+            app:tint="@color/blue" />
+
+        <TextView
+            android:id="@+id/tvForce"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_24sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="@string/lbs"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_width="@dimen/_100sdp"
+        android:background="@drawable/bg_button"
+        android:text="Close"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="@id/btnBack"
+        app:layout_constraintTop_toTopOf="@id/btnBack"
+        app:layout_constraintRight_toLeftOf="@id/btnBack"
+        android:layout_marginEnd="@dimen/_16sdp"
+
+        />
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_16sdp"
+        android:background="@drawable/bg_button"
+        android:text="@string/confirm"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_16sdp"
+        android:background="@drawable/bg_button"
+        android:text="@string/cancel"
+        android:textSize="@dimen/_13sdp"
+        app:backgroundTint="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnConfirm" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_16sdp"
+        android:background="@drawable/bg_outline_button"
+        android:text="@string/back"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

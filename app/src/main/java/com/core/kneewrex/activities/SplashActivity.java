@@ -23,7 +23,7 @@ public class SplashActivity extends BaseActivity {
         setContentView(R.layout.activity_splash);
 
         tvStatus = findViewById(R.id.tvStatus);
-        messageReceived("ok");
+//        messageReceived("ok");
     }
 
 
